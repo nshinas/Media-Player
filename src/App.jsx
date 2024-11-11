@@ -10,13 +10,15 @@ function App() {
 
   return (
     <>
-      {/* path for Landing,Home,History */}
+      {/* Header */}
       <Header/>
       <Routes>
-        <Route path='/' element={<Landing/>}/>
-        <Route path='/home' element={<Home/>}/>
-        <Route path='/history' element={<History/>}/>
+        {/* Path for Landing (baseURL: http://localhost:5173/ ) ,Home (http://localhost:5173/home), History (http://localhost:5173/history ) */}
+        <Route path='/' element={<Landing/>} />
+        <Route path='/home' element={<Home/>} />
+        <Route path='/history' element={<History/>} />
       </Routes>
+      {/* Footer */}
       <Footer/>
     </>
   )
